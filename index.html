@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<script>
-    if (location.protocol !== 'https:') {
-        location.replace(`https:${location.href.substring(location.protocol.length)}`);
-    }
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona Blokowa</title>
@@ -66,15 +61,26 @@
     <main>
         <section>
             <h2>Sekcja główna</h2>
-            <p>Treść główna strony...</p>
+            <p>Znaczniki semantyczne w HTML5 pozwalają lepiej strukturyzować dokument, poprawiając jego czytelność i dostępność.</p>
+            <article>
+                <h3>Przykłady zastosowania:</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - nagłówek strony lub sekcji</li>
+                    <li><code>&lt;nav&gt;</code> - nawigacja</li>
+                    <li><code>&lt;section&gt;</code> - sekcja logiczna</li>
+                    <li><code>&lt;article&gt;</code> - samodzielny blok treści</li>
+                    <li><code>&lt;aside&gt;</code> - treści poboczne</li>
+                    <li><code>&lt;footer&gt;</code> - stopka strony</li>
+                </ul>
+            </article>
         </section>
         <aside>
             <h2>Panel boczny</h2>
-            <p>Dodatkowe informacje...</p>
+            <p>Znacznik <code>&lt;aside&gt;</code> jest używany do treści pobocznych, takich jak reklamy, linki czy dodatkowe informacje.</p>
         </aside>
     </main>
     <footer>
-        <p>&copy; 2025 Moja Strona</p>
+        <p>&copy; 2025 Moja Strona - Wszystkie prawa zastrzeżone</p>
     </footer>
 </body>
 </html>
