@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<script>
+    if (location.protocol !== 'https:') {
+        location.replace(`https:${location.href.substring(location.protocol.length)}`);
+    }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Blokowa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, aside, footer {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            color: white;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section {
+            flex: 2;
+            background: #ddd;
+        }
+        aside {
+            flex: 1;
+            background: #bbb;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moja Strona</h1>
+    </header>
+    <nav>
+        <a href="#">Strona Główna</a>
+        <a href="#">O nas</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Sekcja główna</h2>
+            <p>Treść główna strony...</p>
+        </section>
+        <aside>
+            <h2>Panel boczny</h2>
+            <p>Dodatkowe informacje...</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 Moja Strona</p>
+    </footer>
+</body>
+</html>
