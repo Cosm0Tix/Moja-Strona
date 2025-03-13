@@ -80,3 +80,135 @@
     </footer>
 </body>
 </html>
+Wysłano
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Blokowa</title>
+    <style>
+        /* Resetowanie domyślnych marginesów i paddingów */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #555;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        section {
+            flex: 2;
+            background: #ddd;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        article {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background: #bbb;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Moja Strona Blokowa
+    </header>
+    <nav>
+        <a href="#">Strona główna</a>
+        <a href="#">O nas</a>
+        <a href="#">Usługi</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Sekcja główna</h2>
+            <p>Znaczniki semantyczne w HTML5 pozwalają lepiej strukturyzować dokument, poprawiając jego czytelność i dostępność.</p>
+            <article>
+                <h3>Przykłady zastosowania:</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - nagłówek strony lub sekcji</li>
+                    <li><code>&lt;nav&gt;</code> - nawigacja</li>
+                    <li><code>&lt;section&gt;</code> - sekcja logiczna</li>
+                    <li><code>&lt;article&gt;</code> - samodzielny blok treści</li>
+                    <li><code>&lt;aside&gt;</code> - treści poboczne</li>
+                    <li><code>&lt;footer&gt;</code> - stopka strony</li>
+                </ul>
+            </article>
+        </section>
+        <aside>
+            <h2>Panel boczny</h2>
+            <p>Znacznik <code>&lt;aside&gt;</code> jest używany do treści pobocznych, takich jak reklamy, linki czy dodatkowe informacje.</p>
+        </aside>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
